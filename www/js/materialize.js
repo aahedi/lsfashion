@@ -7053,7 +7053,8 @@ Picker.extend( 'pickadate', DatePicker )
           options.dist = 0;
           var firstImage = view.find('.carousel-item img').first();
           if (firstImage.length) {
-            imageHeight = firstImage.load(function(){
+            //imageHeight = firstImage.load(function(){
+            imageHeight = firstImage.on('load', function() {
               view.css('height', $(this).height());
             });
           } else {
